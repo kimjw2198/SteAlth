@@ -10,7 +10,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print("봇이 성공적으로 실행되었습니다.")
-    game = discord.Streaming(name="SteAlth Bot 실행중", url='https://www.twitch.tv/SteAlth')
+    game = discord.Streaming(name="SteAlth Bot 실행중", url='https://www.twitch.tv/SteAlth-Bot')
     await client.change_presence(status=discord.Status.online, activity=game)
 
 
